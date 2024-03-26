@@ -55,18 +55,18 @@ header {
  /* .main-menu > .gnb > li:nth-child(3) {
     margin-right: 80px;
 } */
-.main-menu > .gnb > li:nth-child(4) {
+.main-menu .gnb > li:nth-child(4) {
     margin-left: 182px;
 }
-.main-menu li > a {
+.main-menu > .gnb > li > a {
     width: 133px;
-    height: 83px;
-    line-height: 83px;
+    height: 80px;
+    line-height: 80px;
     font-family: 'NanumSquareEB';
     text-align: center;
 
 }
-.main-menu li > a:hover {
+.main-menu > .gnb > li > a:hover {
     color: white;
     background-color: #ba000d;
 }
@@ -82,12 +82,75 @@ header {
 .slide > h2 {
     font-size: 0;
 }
-.slide > ul {
+.slide > .slide-image {
     display: flex;
     position: absolute;
     left: 0; top: 0;
     width: 5760px;
 }
-.slide > ul > li {
+.slide > .slide-image > li {
     width: 1920px;
+}
+
+/* best-menu */
+.best-menu {
+    width: 1920px;
+    height: 572px;
+    background-color: #faf9f7;
+}
+.best-menu h2 {
+    position: absolute;
+    left: 50%; top: 90px;
+    transform: translateX(-50%);
+    background-color: aquamarine;
+}
+.best-menu .left_arrow {
+    position: absolute;
+    left: 0; top: 304px;
+    width: 13px;
+}
+.best-menu .menu-list {
+    position: absolute;
+    left: 48px; top: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 1104px;
+    height: 328px;
+    background-color: bisque;
+}
+.best-menu .menu-list > div {
+    position: relative;
+    /* flex: 276px; */
+    height: 328px;
+    background-color: aqua;
+}
+.best-menu .menu-list img {
+    position: absolute;
+    left: 57px; top: 15px;
+    width: 144px;
+    height: 232px;
+}
+.best-menu .menu-list > .menu_5,
+.best-menu .menu-list > .menu_6 {
+    display: none;
+}
+/* .best-menu .menu-list > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+.best-menu .menu-list > ul > li {
+    width: 276px;
+    height: 328px;
+    margin-right: 92px;
+    background-color: blue;
+} */
+
+.best-menu .right-arrow {
+    position: absolute;
+    top: 304px; right: 0; 
+    width: 13px;
 }
