@@ -27,11 +27,11 @@ header {
     justify-content: space-between;
 }
 .headermenu-logo .header-menu li > a {
-    font: 12px '나눔스퀘어Bold';
+    font: 12px 'NanumSquareB';
 }
-.headermenu-logo .header-menu li > a:hover {
+/* .headermenu-logo .header-menu li > a:hover {
     font-weight: bold;
-}
+} */
 .headermenu-logo .logo {
     position: absolute;
     left: 50%; top: 40px;
@@ -62,6 +62,7 @@ header {
     width: 133px;
     height: 83px;
     line-height: 83px;
+    font-family: 'NanumSquareEB';
     text-align: center;
 
 }
