@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font: 16px '나눔스퀘어Regular';
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+strong {
+    display: block;
+}
+address {
+    font-style: normal;
+}
+img {
+    display: block;
+    width: 100%;
+}
+img,
+input,
+textarea,
+select {
+    vertical-align: middle;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font: 30px '나눔스퀘어ExtraBold';
+}
+h3 {
+    font: 24px '나눔스퀘어Bold';
+}
+p {
+    font: 16px '나눔스퀘어Regular';
+}
+header,
+nav,
+main,
+section,
+footer {
+    display: block;
+}
