@@ -5,6 +5,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 10px;  /* 좌우마진 */
+    /* background-color: lightsalmon; */
 }
 
 /*===== header =====*/
@@ -41,24 +42,23 @@ header {
 
 /* main-menu */
 .main-menu {
-    position: absolute;
-    left: 50%; top: 40px;
-    transform: translateX(-50%);
     width: 980px;
-    /* background-color: yellow; */
+    margin: auto;
+    background-color: lightblue;
 }
-.main-menu > .gnb {
+.main-menu .gnb {
+    position: absolute;
+    left: 0; top: 41px;
+    /* transform: translateX(-50%); */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 980px;
+    /* background-color: lightcoral; */
 }
- /* .main-menu > .gnb > li:nth-child(3) {
-    margin-right: 80px;
-} */
-.main-menu .gnb > li:nth-child(4) {
-    margin-left: 182px;
+.main-menu .gnb > li:nth-child(3) {
+    margin-right: 120px;
 }
-.main-menu > .gnb > li > a {
+.main-menu .gnb > li > a {
     width: 133px;
     height: 80px;
     line-height: 80px;
@@ -66,13 +66,16 @@ header {
     text-align: center;
 
 }
-.main-menu > .gnb > li > a:hover {
+.main-menu .gnb > li > a:hover {
     color: white;
     background-color: #ba000d;
-}
+} */
 
 
 /*===== main =====*/
+main {
+    width: 100%;
+}
 .slide {
     position: relative;
     width: 1920px;
@@ -94,63 +97,162 @@ header {
 
 /* best-menu */
 .best-menu {
+    padding: 90px 0;
     width: 1920px;
     height: 572px;
     background-color: #faf9f7;
 }
 .best-menu h2 {
-    position: absolute;
-    left: 50%; top: 90px;
-    transform: translateX(-50%);
-    background-color: aquamarine;
+    text-align: center;
+    /* background-color: aquamarine; */
 }
 .best-menu .left_arrow {
     position: absolute;
-    left: 0; top: 304px;
+    left: 10px; top: 214px;
     width: 13px;
 }
 .best-menu .menu-list {
-    position: absolute;
-    left: 48px; top: 155px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    width: 1104px;
+    width: 1100px;
     height: 328px;
-    background-color: bisque;
+    margin: auto;
+    margin-top: 40px;
+    /* background-color: blue; */
 }
-.best-menu .menu-list > div {
-    position: relative;
-    flex: 257px;
-    height: 328px;
-    background-color: aqua;
-}
-.best-menu .menu-list img {
-    position: absolute;
-    left: 57px; top: 15px;
-    width: 144px;
-    height: 232px;
-}
-.best-menu .menu-list > .menu_5,
-.best-menu .menu-list > .menu_6 {
-    display: none;
-}
-/* .best-menu .menu-list > ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: aqua;
-}
-.best-menu .menu-list > ul > li {
-    width: 276px;
-    height: 328px;
-    margin-right: 92px;
-    background-color: blue;
-} */
 
+.best-menu .menu-list > ul {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.best-menu .menu-list li > a {
+    width: 257px;
+    height: 328px;
+    margin-right: 24px;
+    padding: 30px 56px;
+    border-radius: 10%;
+    background-color: #fff;
+}
+.best-menu .menu-list li > a:hover {
+    border: 3px solid #ba000d;
+}
+.best-menu .menu-list li > a > img {
+    width: 144px;
+    margin-bottom: 20px;
+}
+.best-menu .menu-list li > a > p {
+    width: 155px;
+    text-align: center;
+    /* background-color: lightgreen; */
+}
 .best-menu .right-arrow {
     position: absolute;
-    top: 304px; right: 0; 
+    top: 214px; right: 10px; 
     width: 13px;
 }
+
+/* membership */
+.membership {
+    margin: 150px 0;
+    width: 100%;
+    height: 644px;
+    /* background-color: aqua; */
+}
+.membership-image > .color-box {
+    position: absolute;
+    left: 10px; top: 146px;
+    width: 556px;
+    height: 497px;
+    z-index: 1;
+}
+.membership-image > .hollys-building {
+    position: absolute;
+    left: 100px; top: 0;
+    width: 629px;
+    height: 554px;
+    z-index: 2;
+}
+.membership-box {
+    position: absolute;
+    top: 226px; right: 10px;
+    width: 500px;
+    height: 357px;
+    background: #faf9f7;
+}
+.membership-box ul {
+    margin: 65px 130px 65px 180px;
+    /* background-color: lightgoldenrodyellow; */
+}
+.membership-box strong {
+    color: #ba000d;
+    margin-bottom: 18px;
+}
+.membership-box li:nth-child(3) > p {
+    width: 190px;
+    line-height: 20pt;
+    margin-top: 30px;
+}
+.membership-box li:last-child > p > a {
+    width: 124px;
+    height: 38px;
+    padding-top: 10px;
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #ba000d;
+}
+
+/* mall */
+.mall h2 {
+    text-align: center;
+    /* background-color: lightblue; */
+}
+.mall .sub-txt {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.mall .mall-list {
+    display: flex;
+    justify-content: space-between;
+}
+.mall .mall-list > li {
+    position: relative;
+    width: 380px;
+    height: 244px;
+    padding: 40px 50px;
+    background-color: #f3f3f3;
+}
+.mall .mall-list > li.hollyscard {
+    background-color: #fff;
+}
+.mall .mall-list img {
+    width: 87px;
+    margin-top: 15px;
+}
+.mall .mall-list >li.hollyscard > img {
+    margin-top: 30px;
+}
+.mall .mall-list > li > div > p {
+    position: absolute;
+    right: 50px; bottom: 75px;
+    width: 173px;
+    height: 80px;
+    line-height: 20pt;
+    /* background-color: lightskyblue; */
+}
+.mall .mall-list li > div.e-store-txt > p {
+    position: absolute;
+    right: 50px; bottom: 50px;
+    /* background-color: lightskyblue; */
+}
+.mall .mall-list > li > div a {
+    position: absolute;
+    right: 50px; bottom: 40px;
+    font-size: 12px;
+}
+.mall .mall-list > li > div a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* franchose */

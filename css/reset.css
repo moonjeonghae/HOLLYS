@@ -57,7 +57,11 @@ a {
     color: #000;
     text-decoration: none;
 }
-strong {
+strong{
+    display: block;
+    font: 18px 'NanumSquareB';
+}
+span {
     display: block;
 }
 address {
