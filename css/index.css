@@ -5,7 +5,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 10px;  /* 좌우마진 */
-    /* background-color: lightsalmon; */
+    background-color: lightsalmon;
 }
 
 /*===== header =====*/
@@ -76,6 +76,13 @@ header {
 main {
     width: 100%;
 }
+.sub-txt {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* slide */
 .slide {
     position: relative;
     width: 1920px;
@@ -206,11 +213,6 @@ main {
     text-align: center;
     /* background-color: lightblue; */
 }
-.mall .sub-txt {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    text-align: center;
-}
 .mall .mall-list {
     display: flex;
     justify-content: space-between;
@@ -255,4 +257,94 @@ main {
     text-decoration: underline;
 }
 
-/* franchose */
+/* franchise */
+.franchise {
+    margin-top: 150px;
+    width: 100%; height: 390px;
+    background-image: url(../image/franchise_background.png);
+}
+.franchise .franchise-txt {
+    padding-top: 60px;
+    padding-left: 40px;
+}
+.franchise .franchise-txt li > .kor-title {
+    margin-top: 18px;
+    color: #ba000d;
+}
+.franchise .franchise-txt li > .point-txt {
+    margin-top: 32px;
+    margin-bottom: 17px;
+}
+.franchise .franchise-txt li > p {
+    width: 340px;
+    line-height: 20pt;
+    /* background-color: aqua; */
+}
+.franchise-txt li > .franchise-button > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 288px;
+    margin-top: 40px;
+}
+.franchise-txt li > .franchise-button li a {
+    width: 124px;
+    height: 38px;
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #ba000d;
+}
+
+/* store */
+.store {
+    margin-top: 150px;
+}
+.store-sec {
+    position: relative;
+    /* background-color: lightseagreen; */
+}
+.store-sec > h2 {
+    text-align: center;
+}
+.store-sec .store-search-box {
+    position: relative;
+    margin: 40px 379px 20px;
+}
+.store-sec .store-search-box > input[type=search] {
+    width: 442px;
+    height: 60px;
+    border: 5px solid #ba000d;
+    /* background-color: lightcoral; */
+}
+.store-sec .store-search-box > .search-icon {
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+}
+.store-sec > .more > a {
+    font-size: 12px;
+    text-align: center;
+}
+.store-sec > .more > a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* news */
+.news {
+    margin-top: 150px;
+    padding: 90px 0 ;
+    background-color: #faf9f7;
+}
+.news h2 {
+    /* margin-top: 90px; */
+}
+.news .event > h3 {
+    margin-top: 20px;
+}
+.news .event > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+}
