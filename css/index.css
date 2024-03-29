@@ -316,6 +316,9 @@ main {
     border: 5px solid #ba000d;
     /* background-color: lightcoral; */
 }
+.store-sec .store-search-box > input::placeholder {
+    padding-left : 10px;
+}
 .store-sec .store-search-box > .search-icon {
     position: absolute;
     right: 0; top: 50%;
@@ -335,16 +338,86 @@ main {
 .news {
     margin-top: 150px;
     padding: 90px 0 ;
+    height: 491px;
     background-color: #faf9f7;
 }
-.news h2 {
-    /* margin-top: 90px; */
-}
-.news .event > h3 {
-    margin-top: 20px;
-}
-.news .event > ul {
+.news ul {
+    position: absolute;
+    left: 300px; top: 50px;
     display: flex;
     justify-content: space-between;
     width: 880px;
+}
+.news .event > h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.news ul {
+    position: absolute;
+    left: 300px; top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+}
+.news .event > ul > li {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background-color: #fff;
+}
+.news .event > ul > li p {
+    margin: 20px 25px 35px;
+    text-align: justify;
+    /* background-color: lightcoral; */
+}
+/* .news .event > ul > li > a:hover > p{
+    font-weight: 500;
+} */
+.news .event > ul > li time {
+    position: absolute;
+    left: 25px; bottom: 20px;
+    font-size: 12px;
+    color: gray;
+}
+.news .sns > ul > li {
+    width: 280px;
+}
+
+/* footer */
+footer {
+    width: 1920px;
+    height: 243px;
+    background-color: #ba000d;
+}
+
+/* menu-sns */
+.menu-box {
+    padding: 54px 110px 0 155px;
+}
+.menu-box > .footer-menu {
+    width: 680px;
+    height: 17px;
+    /* background-color: aquamarine; */
+}
+.menu-box > .footer-menu > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-box > .footer-menu li > a {
+    padding-right: 8px;
+    border-right: 1px solid #fff;
+}
+.menu-box > .footer-menu li:first-child > a {
+    padding-left: 0;
+}
+.menu-box > .footer-menu li:last-child > a {
+    border: none;
+    padding-right: 0;
+}
+.menu-box > .footer-menu li > a > p {
+    color: #fff;
+    font: 14px 'nunumsquareBold';
+}
+.sns {
+    display: flex;
 }
