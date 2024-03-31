@@ -5,7 +5,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 10px;  /* 좌우마진 */
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
 }
 
 /*===== header =====*/
@@ -417,21 +417,19 @@ footer {
     color: #fff;
     font: 14px 'nunumsquareBold';
 }
-.sns {
+.footer-sns {
     position: absolute;
     top: 55px; right: 120px;
     display: flex;
     justify-content: space-between;
     width: 67px;
 }
-.sns img {
+.footer-sns img {
     width: 30px;
     height: 30px;
 }
 
 /* footerlogo-info */
-.footer-contents-box > .footer-logo {
-    position: absolute;
-    left: 0px; top: 0;
+.footer-contents-box > .footer-logo > img {
     width: 110px;
 }
