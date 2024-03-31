@@ -10,7 +10,6 @@
 
 /*===== header =====*/
 header {
-    width: 1920px;
     height: 164px;
     border-bottom: 2px solid #ba000d;
     /* background-color: lightgoldenrodyellow; */
@@ -28,7 +27,7 @@ header {
     justify-content: space-between;
 }
 .headermenu-logo .header-menu li > a {
-    font: 12px 'NanumSquareB';
+    font: 12px 'NanumSquareR';
 }
 /* .headermenu-logo .header-menu li > a:hover {
     font-weight: bold;
@@ -419,5 +418,20 @@ footer {
     font: 14px 'nunumsquareBold';
 }
 .sns {
+    position: absolute;
+    top: 55px; right: 120px;
     display: flex;
+    justify-content: space-between;
+    width: 67px;
+}
+.sns img {
+    width: 30px;
+    height: 30px;
+}
+
+/* footerlogo-info */
+.footer-contents-box > .footer-logo {
+    position: absolute;
+    left: 0px; top: 0;
+    width: 110px;
 }

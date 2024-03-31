@@ -45,6 +45,7 @@ url('./font/NanumSquareR.svg#KakaoaLt') format('svg');
 
 html,
 body {
+    width: 1920px;
     font: 16px 'NanumSquareR';
 }
 ul,
