@@ -42,7 +42,18 @@ url('./font/NanumSquareR.woff') format('woff'),
 url('./font/NanumSquareR.ttf') format('truetype'),
 url('./font/NanumSquareR.svg#KakaoaLt') format('svg');
 }
-
+@font-face {
+    font-family: 'NanumSquareL';
+    font-weight: 300;
+    font-style: normal;
+    src: url('./font/NanumSquareL.eot');
+    src: local('NanumSquareL'),
+    url('./font/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+    url('./font/NanumSquareL.woff2') format('woff2'),
+    url('./font/NanumSquareL.woff') format('woff'),
+    url('./font/NanumSquareL.ttf') format('truetype'),
+    url('./font/NanumSquareL.svg#KakaoaLt') format('svg');
+}
 html,
 body {
     width: 1920px;

@@ -10,33 +10,31 @@
 
 /*===== header =====*/
 header {
+    width: 100%;
     height: 164px;
     border-bottom: 2px solid #ba000d;
     /* background-color: lightgoldenrodyellow; */
 }
 
 /* headermenu-logo */
-.headermenu-logo .header-menu {
+.headermenu-logo .header-content > .header-menu {
     position: absolute;
-    right: 10px; top: 20px;
-    width: 180px;
-    /* background-color: lightcoral; */
+    top: 20px; right: 10px;
 }
 .headermenu-logo .header-menu > ul {
     display: flex;
     justify-content: space-between;
+    width: 180px;
 }
 .headermenu-logo .header-menu li > a {
-    font: 12px 'NanumSquareR';
+    font-size: 12px;
 }
-/* .headermenu-logo .header-menu li > a:hover {
-    font-weight: bold;
-} */
-.headermenu-logo .logo {
+.headermenu-logo .header-content > .logo {
     position: absolute;
-    left: 50%; top: 40px;
+    left: 50%; top:41px;
     transform: translateX(-50%);
     width: 100px;
+    z-index: 2;
 }
 
 /* main-menu */
@@ -48,27 +46,27 @@ header {
 .main-menu .gnb {
     position: absolute;
     left: 0; top: 41px;
-    /* transform: translateX(-50%); */
     display: flex;
     justify-content: space-between;
     width: 980px;
+    z-index: 1;
     /* background-color: lightcoral; */
 }
 .main-menu .gnb > li:nth-child(3) {
-    margin-right: 120px;
+    margin-right: 130px;
 }
 .main-menu .gnb > li > a {
     width: 133px;
     height: 80px;
     line-height: 80px;
-    font-family: 'NanumSquareEB';
+    font-size: 18px;
+    font-family:'NanumSquareEB';
     text-align: center;
-
 }
 .main-menu .gnb > li > a:hover {
     color: white;
     background-color: #ba000d;
-} */
+}
 
 
 /*===== main =====*/
@@ -99,6 +97,21 @@ main {
 }
 .slide > .slide-image > li {
     width: 1920px;
+}
+.slide > .slide-button {
+    position: absolute;
+    bottom: 17px; left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 57px;
+}
+.slide > .slide-button a {
+    color: #d7d7d7;
+}
+.slide > .slide-button a:hover,
+.slide > .slide-button a:focus {
+    color: #ba000d;
 }
 
 /* best-menu */
@@ -260,7 +273,7 @@ main {
 .franchise {
     margin-top: 150px;
     width: 100%; height: 390px;
-    background-image: url(../image/franchise_background.png);
+    background-image: url(../images/franchise_background.png);
 }
 .franchise .franchise-txt {
     padding-top: 60px;
@@ -315,8 +328,18 @@ main {
     border: 5px solid #ba000d;
     /* background-color: lightcoral; */
 }
+.store-sec .store-search-box > input[type=search]:focus {
+    outline-style: none;
+    padding-left: 10px;
+}
 .store-sec .store-search-box > input::placeholder {
     padding-left : 10px;
+}
+.store-sec .store-search-box > input:focus::placeholder {
+    color: transparent;
+}
+.store-sec .store-search-box > input::-webkit-search-cancel-button {
+    display: none;
 }
 .store-sec .store-search-box > .search-icon {
     position: absolute;
@@ -347,6 +370,13 @@ main {
     justify-content: space-between;
     width: 880px;
 }
+.news .event > h3 > a:hover,
+.news .sns > h3 > a:hover,
+.news .event > h3 > a:focus,
+.news .sns > h3 > a:focus {
+    font-family: 'NanumSquareEB';
+}
+
 .news .event > h3 {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -364,47 +394,57 @@ main {
     height: 280px;
     background-color: #fff;
 }
-.news .event > ul > li p {
+/* .news .event > ul > li > a:hover {
+   
+} */
+.news .event > ul > li > a > p {
     margin: 20px 25px 35px;
     text-align: justify;
+    line-height: 1.3;
     /* background-color: lightcoral; */
 }
-/* .news .event > ul > li > a:hover > p{
-    font-weight: 500;
+/* .news .event > ul > li > a:hover > p {
+    font-weight: bod;
 } */
-.news .event > ul > li time {
+.news .event > ul > li > a > time {
     position: absolute;
     left: 25px; bottom: 20px;
     font-size: 12px;
     color: gray;
 }
 .news .sns > ul > li {
+    display: none;  /* event가 우선적으로 보여야함 */
     width: 280px;
 }
 
-/* footer */
+
+/*===== footer =====*/
 footer {
-    width: 1920px;
     height: 243px;
+    padding-top: 54px;
     background-color: #ba000d;
 }
 
 /* menu-sns */
 .menu-box {
-    padding: 54px 110px 0 155px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    /* background-color: bisque; */
 }
-.menu-box > .footer-menu {
-    width: 680px;
-    height: 17px;
-    /* background-color: aquamarine; */
-}
+/* footer-menu */
 .menu-box > .footer-menu > ul {
     display: flex;
     justify-content: space-between;
+    width: 680px;
+    margin-left: 155px;
+    /* background-color: aquamarine; */
 }
 .menu-box > .footer-menu li > a {
-    padding-right: 8px;
+    padding-right: 12px;
     border-right: 1px solid #fff;
+    color: #fff;
+    font: 14px 'NanumSquareB';
 }
 .menu-box > .footer-menu li:first-child > a {
     padding-left: 0;
@@ -413,16 +453,12 @@ footer {
     border: none;
     padding-right: 0;
 }
-.menu-box > .footer-menu li > a > p {
-    color: #fff;
-    font: 14px 'nunumsquareBold';
-}
+/* sns */
 .footer-sns {
-    position: absolute;
-    top: 55px; right: 120px;
     display: flex;
     justify-content: space-between;
     width: 67px;
+    margin-left: 150px;
 }
 .footer-sns img {
     width: 30px;
@@ -430,6 +466,53 @@ footer {
 }
 
 /* footerlogo-info */
-.footer-contents-box > .footer-logo > img {
+.footer-contents-box > .footer-logo {
+    position: absolute;
+    left: 10px; top: -20px;
     width: 110px;
+}
+.footer-contents-box > .info {
+    margin-left: 155px;
+    margin-top: 10px;
+    /* background-color: aqua; */
+}
+.footer-contents-box > .info > p,
+.footer-contents-box > .info > address {
+    color: #fff;
+    font: 14px 'NanumSquareL';
+    line-height: 1.3;
+} 
+.footer-contents-box > .info > .copyright {
+    margin-top: 12px;
+}
+
+/* fixed-menu */
+.fixed-menu {
+    position: fixed;
+    right: 150px; bottom: 67px;
+}
+.fixed-menu li > a {
+    position: relative;
+    width: 65px; height: 65px;
+    border-radius: 15%;
+    background-color: #4f4c4b;
+}
+.fixed-menu li:first-child > a {
+    margin-bottom: 6px;
+}
+.fixed-menu li > a > img {
+    position: absolute;
+    top: 6px; left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+}
+.fixed-menu li > a > strong {
+    position: absolute;
+    bottom: 6px; left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    /* background-color: aqua; */
 }

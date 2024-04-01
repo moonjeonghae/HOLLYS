@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script>
+         let num = 1;
+        setInterval(() => {
+            num++;
+            if(num > 3) num = 1;
+            document.getElementById("banner").setAttribute("src","images/mainBanner_" + num + ".png");
+        }, 3000);
+    </script>
     <title>할리스 리뉴얼 홈페이지</title>
 </head>
 <body>
     <header>
         <div class="headermenu-logo">
             <div class="container">
-                <div class="header-menu">
-                    <ul>
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">고객센터</a></li>
-                        <li><a href="#">English</a></li>
-                    </ul>
-                </div>
-                <div class="logo">
-                    <h1><a href="./index.html"><img src="./images/logo.gif" alt="logo"></a></h1>
+                <div class="header-content">
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <h1><a href="./index.html"><img src="./images/logo.gif" alt="logo"></a></h1>
+                    </div>
                 </div>
             </div>  <!-- container -->
         </div>  <!-- headermenu-logo -->
@@ -43,12 +53,14 @@
         <article class="slide">
             <h2>slide</h2>
             <ul class="slide-image">
-                <li><img src="./images/mainBanner_1.png" alt="mainBanner_01"></li>
-                <li><img src="./images/mainBanner_2.png" alt="mainBanner_02"></li>
-                <li><img src="./images/mainBanner_3.png" alt="mainBanner_03"></li>
+                <li><img src="./images/mainBanner_1.png" alt="mainBanner_01" id="banner"></li>
+                <li><img src="./images/mainBanner_2.png" alt="mainBanner_02" id="banner"></li>
+                <li><img src="./images/mainBanner_3.png" alt="mainBanner_03" id="banner"></li>
             </ul>
             <ul class="slide-button">
-                <li><a href="#"></a></li>
+                <li><a href="#" id="banner-btn">●</a></li>
+                <li><a href="#" id="banner-btn">●</a></li>
+                <li><a href="#" id="banner-btn">●</a></li>
             </ul>
         </article>  <!-- slide -->
 
@@ -192,7 +204,7 @@
                         <div class="store-search-box">
                             <input type="search" name="search" class="search" placeholder="매장명이나 주소를 입력해주세요.">
                             <div class="search-icon">
-                                <img src="./image/search-icon.png" alt="search icon">
+                                <img src="./images/search-icon.png" alt="search icon">
                             </div>
                         </div>
                     </form>
@@ -205,25 +217,25 @@
             <div class="container">
                 <h2>HOLLYS News</h2>
                 <div class="event">
-                    <h3>Evnet&Notice</h3>
+                    <h3><a href="#">Event</a></h3>
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="./image/event_1.png" alt="evnet1">
+                                <img src="./images/event_1.png" alt="event1">
                                 <p>Ready, Get Luck, Go! 행운의 기운 가득 담은 봄 음료 출시!</p>
                                 <time datetime="2023-03-05">2023.03.05</time>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./image/event_2.jpg" alt="evnet2">
+                                <img src="./images/event_2.jpg" alt="event2">
                                 <p>[멤버십 혜택] 할리스 멤버십 회원만을 위한 3월의 혜택 안내</p>
                                 <time datetime="2023-02-28">2023.02.28</time>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./image/event_3.png" alt="evnet3">
+                                <img src="./images/event_3.png" alt="event3">
                                 <p>치즈폭탄, 자이언트, 쫄깃담백 든든한 프레즐 출시!</p>
                                 <time datetime="2023-01-25">2023.01.25</time>
                             </a>
@@ -231,36 +243,37 @@
                     </ul>
                 </div>
                 <div class="sns">
-                    <h3>SNS</h3>
+                    <h3><a href="#">SNS</a></h3>
                     <ul>
-                        <li><a href="https://www.instagram.com/official_hollys/p/C4epKUAs_2V/" target="_blank"><img src="./image/sns_1.jpg" alt="sns1"></a></li>
-                        <li><a href="https://www.instagram.com/official_hollys/p/C3hKqO9PC5R/" target="_blank"><img src="./image/sns_2.jpg" alt="sns2"></a></li>
-                        <li><a href="https://www.instagram.com/official_hollys/p/C3USrLMv_nl/" target="_blank"><img src="./image/sns_3.jpg" alt="sns3"></a></li>
+                        <li><a href="https://www.instagram.com/official_hollys/p/C4epKUAs_2V/" target="_blank"><img src="./images/sns_1.jpg" alt="sns1"></a></li>
+                        <li><a href="https://www.instagram.com/official_hollys/p/C3hKqO9PC5R/" target="_blank"><img src="./images/sns_2.jpg" alt="sns2"></a></li>
+                        <li><a href="https://www.instagram.com/official_hollys/p/C3USrLMv_nl/" target="_blank"><img src="./images/sns_3.jpg" alt="sns3"></a></li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="menu-sns">
             <div class="container">
                 <div class="menu-box">
                     <nav class="footer-menu">
                         <ul>
-                            <li><a href="#"><p>개인정보처리방침</p></a></li>
-                            <li><a href="#"><p>서비스이용약관</p></a></li>
-                            <li><a href="#"><p>멤버십이용약관</p></a></li>
-                            <li><a href="#"><p>할리스카드이용약관</p></a></li>
-                            <li><a href="#"><p>고객설문</p></a></li>
-                            <li><a href="#"><p>사이트맵</p></a></li>
-                            <li><a href="#"><p>BI 소개</p></a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">서비스이용약관</a></li>
+                            <li><a href="#">멤버십이용약관</a></li>
+                            <li><a href="#">할리스카드이용약관</a></li>
+                            <li><a href="#">고객설문</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">BI 소개</a></li>
                         </ul>
                     </nav>
-                </div>
-                <div class="footer-sns">
-                    <a href="https://www.facebook.com/EnjoyHollys"><img src="./images/sns_icon_1.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/official_hollys/"><img src="./images/sns_icon_2.png" alt="instagram"></a>
-                </div>
+                    <div class="footer-sns">
+                        <a href="https://www.facebook.com/EnjoyHollys"><img src="./images/sns_icon_1.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/official_hollys/"><img src="./images/sns_icon_2.png" alt="instagram"></a>
+                    </div>
+                </div>  <!-- menu-box -->
             </div>  <!-- container -->
         </div>  <!-- menu-sns -->
 
