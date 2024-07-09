@@ -1,5 +1,5 @@
 # HOLLYS RENEWAL
-할리스 리뉴얼 페이지입니다.
+<img src="./images/git/git_monitor.png" alt="monitor" width="500px">
 
 ## 📢 About
 📆 제작 기간 : 2024.03 ~ 2024.04 <br>
