@@ -9,7 +9,7 @@
 @font-face { 
     font-family: 'NanumSquareEB';
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 800;
     src: url('./font/NanumSquareEB.eot');
     src: local('NanumSquareEB'),
     url('./font/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
@@ -21,7 +21,7 @@
 @font-face { 
     font-family: 'NanumSquareB';
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
     src: url('./font/NanumSquareB.eot');
     src: local('NanumSquareB'),
     url('./font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
@@ -33,7 +33,7 @@
 @font-face { 
     font-family: 'NanumSquareR';
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
     src: url('./font/NanumSquareR.eot');
     src: local('NanumSquareR'),
     url('./font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
