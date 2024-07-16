@@ -1,4 +1,4 @@
-# HOLLYS RENEWAL
+# 🥤 HOLLYS RENEWAL
 <img src="./images/git/git_monitor.png" alt="monitor" width="500px">
 
 ## 📢 About
