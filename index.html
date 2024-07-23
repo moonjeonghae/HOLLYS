@@ -6,14 +6,7 @@
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script>
-         let num = 1;
-        setInterval(() => {
-            num++;
-            if(num > 3) num = 1;
-            document.getElementById("banner").setAttribute("src","images/mainBanner_" + num + ".png");
-        }, 3000);
-    </script>
+    <script src="./js/index.js"></script>
     <title>HOLLYS</title>
 </head>
 <body>
@@ -59,7 +52,7 @@
                 <li><img src="./images/mainBanner_3.png" alt="mainBanner_03" class="banner"></li>
             </ul>
             <ul class="slide-button">
-                <li><a href="#" class="banner-btn">●</a></li>
+                <li><a href="#" class="banner-btn active">●</a></li>
                 <li><a href="#" class="banner-btn">●</a></li>
                 <li><a href="#" class="banner-btn">●</a></li>
             </ul>
@@ -218,7 +211,7 @@
             <div class="container">
                 <h2>HOLLYS News</h2>
                 <div class="event">
-                    <h3><a href="#">Event</a></h3>
+                    <h3><a href="#" class="selected">Event</a></h3>
                     <ul>
                         <li>
                             <a href="#">
